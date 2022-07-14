@@ -1,146 +1,228 @@
 *{
- padding:0;
- margin:0;
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
 }
 
-
+    /* Header */
 header{
- color:#FFF;
- background-color: #284b63;
- padding: 70px 0px;
- text-align: center;
- line-height: 30px;
+    color:#FFF;
+    background-color: #284b63;
+    padding: 70px 0px;
+    text-align: center;
+    line-height: 45px;
+    width: 100%;
+    margin:auto;
 }
+
 
 img{
-width:100px;
-height:100px;
-border-radius: 50%;
-border: 1px solid white;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 h1{
-font-size: 30px;
-font-family: serif;
-font-weight: 600;
+    font-size: 40px;
+    font-family: serif, 'Algerian';
+    font-weight: 600;
 }
 
 h4{
-color:coral;
-font-weight: 400;
-padding-bottom: 30px;
+    color:coral;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 25px;
 }
 
 header p{
-
-font-size: 10px;
-opacity: 60%;
-font-family: montserrat;
-padding-bottom: 14px;
+    font-size: 14px;
+    opacity: 60%;
+    font-family: montserrat;
+    padding-bottom: 14px;
 }
 
 .btn{
-background: orange;
-color: white;
-padding: 12px 15px;
-font-size: 13px;
-border-radius: 2px;
-text-decoration: none;
-font-weight: 400;
-cursor: pointer;
-
+    background: orange;
+    color: white;
+    padding: 12px 15px;
+    font-size: 21px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid orange;
 }
 
 .btn:hover{
-background:#468486;
-
+    background: teal;
 }
 
-section{
- padding:40px 0px;
- text-align:center;
+section{    /* section equalizer */
+    padding:40px 0px;
+    text-align:center;
 }
-
-/* start feature section*/
+    
+    /* Game features */
 .features{
-color: black;
-font-family: montserrat;
-font-weight:390;
-
+    color: black;
+    font-family: montserrat;
+    font-weight:390;
 }
 
 
 .fimage{
-width:100px;
-height:100px;
-border-radius: 12px;
-border: 1px solid white;
+    width:200px;
+    height:200px;
+    border-radius: 8px;
+    border:1px solid orange;
 }
-
-
-
 
 
 .features ul{
-
-display: flex;
-justify-content: space-evenly;
-line-height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 30px;
 }
 .features ul li{
-display: inline-block;
-padding-top: 20px;
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
-/*quote section */
-
+    /* Quotes section */
 .quote{
-background: #f2fefe;
+    background: #f2fefe;
+    position: relative;
 }
 
 .quotes{
-height: 100px;
-line-height: 20px;
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-
+    height: 100px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .quotes p{
-
-padding: 12px 12px;
-font-style: italic;
-font-size: 12px;
-opacity: 80%;
+    padding: 12px 12px;
+    font-style: italic;
+    font-size: 17px;
+    opacity: 80%;
 }
 
-/* footer */
+    /* Footer */
 footer{
-background:#323232;
-padding: 34px 0px;
-text-align:center;
-color:#979696;
-
-
+    background:#323232;
+    padding: 34px 0px;
+    text-align:center;
+    color:#979696;
 }
 
 nav ul li{
-display: inline-block;
-list-style: none;
+    display: inline-block;
+    list-style: none;
 }
 
 nav ul li a{
-text-decoration: none;
-padding: 0px 10px;
-color: white;
-
+    text-decoration: none;
+    padding: 0px 10px;
+    color: white;
+    font-size: 20px;
 }
 
 p.footer{
-padding-top: 10px;
-opacity: 60%;
+    padding-top: 10px;
+    opacity: 60%;
 }
+
+    /*Media Queries*/
+
+@media(max-width: 500px){
+        /* Header */
+    header{
+        padding-bottom: 30px;
+        width:100%;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+    
+    header p{
+        font-size: 12.5px;
+    }
+
+    .btn{
+        font-size: 13px;
+    }
+       
+       /* Features */     
+    .features{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        line-height: 10px;
+    }
+
+    h4{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .features ul{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5px;
+
+    }
+
+    .features .fimage{
+        width: 100px;
+        height: 100px;
+        border:1px solid orange;
+    }
+
+
+    .features ul li{
+        font-size: 15px;
+        
+    }
+        
+        /* Quotes */
+    .quotes{
+        padding: 80px 0px;
+        flex-direction: column;
+        line-height: 11px;
+    }
+
+    .quotes p{
+        font-size: 13px;
+        
+        
+    }
+
+        /* Footer */
+    footer{
+        padding:15px 0px;
+    }
+    
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    p.footer{
+        font-size: 12px;
+    }
+
+} /* Media max width 500px close bracket */
+
+
 
 
 
